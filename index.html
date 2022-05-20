@@ -23,7 +23,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Barbershop</title>
   </head>
@@ -35,6 +34,7 @@
             <use href="./images/symbol-defs.svg#icon-logo"></use>
           </svg>
         </a>
+        <button type="button" class="menu-open-btn">O</button>
         <nav class="navigation">
           <ul class="menu-list list">
             <li class="menu-list__item">
@@ -68,6 +68,71 @@
           >
             онлайн-запись
           </button>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">X</button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item">
+                <a
+                  href="https://www.google.com/"
+                  class="mob-menu-list__link link"
+                  >О нас</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="./portfolio.html" class="mob-menu-list__link link"
+                  >Услуги и цены</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="#masters" class="mob-menu-list__link link">Мастера</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a
+                  href="https://www.google.com/"
+                  class="mob-menu-list__link link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <a class="mob-connect__tel link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <button
+                type="button"
+                class="mob-connect__btn btn btn--light"
+                data-modal-open
+              >
+                онлайн-запись
+              </button>
+            </div>
+            <ul class="mob-soc__list list">
+              <li class="mob-soc__item">
+                <a
+                  href=""
+                  class="mob-soc__link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  href=""
+                  class="mob-soc__link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -116,7 +181,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <ul class="about-list list">
             <li class="about-list__item">
@@ -147,8 +212,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="prices">
+      </section> -->
+      <!-- <section class="prices">
         <div class="container">
           <p class="prices-top-text top-text">
             Проведи время в компании лучших мастеров
@@ -196,8 +261,8 @@
           </div>
           <button type="button" class="prices-btn btn">онлайн-запись</button>
         </div>
-      </section>
-      <section class="reasons">
+      </section> -->
+      <!-- <section class="reasons">
         <div class="container">
           <ul class="reasons-list list">
             <li class="reasons-item">
@@ -224,7 +289,7 @@
             прочувствовать, чем 10 раз прочитать.
           </p>
         </div>
-      </section>
+      </section> -->
       <section id="masters" class="masters">
         <div class="container">
           <p class="masters-top-text top-text">
@@ -305,76 +370,33 @@
           <h2 class="visually-hidden">Галерея</h2>
           <ul class="gallery-list list">
             <li class="gallery-item">
-              <img
-                src="./images/gallery-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-img-2.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-img-3.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-img-4.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-img-2.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-img-3.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-img-4.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-img-1.jpeg    1x,
+                    ./images/gallery-img-1-2x.jpeg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-1-tab.jpeg    1x,
+                    ./images/gallery-img-1-tab-2x.jpeg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-1-mob.jpeg    1x,
+                    ./images/gallery-img-1-mob-2x.jpeg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/gallery-img-1.jpeg"
+                  alt="барбер стрижет клиента"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
               <img
@@ -403,7 +425,7 @@
           </ul>
         </div>
       </section>
-      <div class="contact-wrap">
+      <!-- <div class="contact-wrap">
         <div class="container">
           <section class="online">
             <h2 class="title online-title">Онлайн-запись</h2>
@@ -465,9 +487,9 @@
             <p>Ежедневно с 9:00 до 22:00</p>
           </section>
         </div>
-      </div>
+      </div> -->
     </main>
-    <footer>
+    <!-- <footer>
       <ul>
         <li></li>
       </ul>
@@ -484,7 +506,7 @@
           >
         </li>
       </ul>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -586,5 +608,6 @@
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
